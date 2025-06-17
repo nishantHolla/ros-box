@@ -1,0 +1,39 @@
+# Build artifacts
+build/
+devel/
+install/
+log/
+
+# ROS-related
+*.pyc
+*.swp
+*.bak
+*.orig
+*.cfgcach*
+*.depend
+*.pcd
+
+# catkin_tools
+.catkin_tools/
+.cmake/
+.cache/
+.catkin_workspace
+
+# Python virtual environments
+venv/
+env/
+
+# VSCode or other IDEs
+.vscode/
+.idea/
+
+# Backup files
+*~
+*.tmp
+
+# macOS or system files
+.DS_Store
+Thumbs.db
+
+# clangd
+.clangd
