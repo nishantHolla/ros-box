@@ -37,3 +37,8 @@ Thumbs.db
 
 # clangd
 .clangd
+
+# turtlebot
+src/turtlebot3
+src/turtlebot3_msgs
+src/turtlebot3_simulations
