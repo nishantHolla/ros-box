@@ -3,7 +3,7 @@
 import numpy as np
 import cv2
 
-image = cv2.imread("./images/tree.jpg")
+image = cv2.imread("./images/shapes.jpg")
 cv2.imshow("Original", image)
 
 hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
@@ -18,13 +18,13 @@ blue: 120 to 150
 magenta: 150 to 180
 '''
 
-green = (
-    ( 40, 0, 0 ), # Lower bound H, S, V
-    ( 120, 255, 255) # Upper bound H, S, V
+red = (
+    ( 0, 0, 0 ), # Lower bound H, S, V
+    ( 30, 255, 255) # Upper bound H, S, V
 )
 
 # Define a mask
-mask = cv2.inRange(image, green[0], green[1])
+mask = cv2.inRange(image, red[0], red[1])
 
 cv2.imshow("Color filter", mask)
 cv2.waitKey(0)
