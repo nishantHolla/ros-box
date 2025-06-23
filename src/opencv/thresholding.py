@@ -58,6 +58,7 @@ cv2.imshow("Adaptive Mean", adaptive_mean)
 print(break_line)
 
 print("Adaptive thresholding with Gaussian")
+
 adaptive_gaussian = cv2.adaptiveThreshold(
 	image,                          # Image to threshold
 	255,                            # Max value
