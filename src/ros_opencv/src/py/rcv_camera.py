@@ -47,6 +47,7 @@ def node():
 
 	cv2.destroyAllWindows()
 
+# Run the node if the file is executed
 if __name__ == "__main__":
 	try:
 		node()
